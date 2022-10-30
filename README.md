@@ -68,6 +68,14 @@ plt.title("Hours vs Scores(Test Set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
+
+mse=mean_squared_error(Y_test,Y_pred)
+print('MSE = ',mse)
+mae=mean_absolute_error(Y_test,Y_pred)
+print('MAE = ',mae)
+rmse=np.sqrt(mse)
+print('RMSE = ',rmse)
+
 ```
 
 ## Output:
@@ -79,6 +87,8 @@ plt.show()
 ![simple linear regression model for predicting the marks scored](6.png)
 ![simple linear regression model for predicting the marks scored](7.png)
 ![simple linear regression model for predicting the marks scored](8.png)
+![simple linear regression model for predicting the marks scored](9.png)
+
 
 
 ## Result:
